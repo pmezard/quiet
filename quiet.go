@@ -64,7 +64,7 @@ Originally used in crontab.
 	cmd.Stderr = w
 	err := cmd.Run()
 	if err != nil {
-		_, err = os.Stderr.Write(w.Bytes())
+		os.Stderr.Write(w.Bytes())
 	}
 	return err
 }
