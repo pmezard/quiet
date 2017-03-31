@@ -8,6 +8,6 @@ quiet sh -c 'echo something; false'
 ```
 executes `sh -c 'echo something; false'` and because the command fails, prints
 `echo` output and forward the exit status code. It would have printed nothing
-if `false` where to be removed or replaced by `true`.
+if `false` were to be removed or replaced by `true`.
 
 If you know a simple standard way to achieve this, please tell me!
